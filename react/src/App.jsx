@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import io from 'socket.io-client';
+// import io from 'socket.io-client';
 import { LineChart } from '@mui/x-charts/LineChart';
 
 const App = () => {
@@ -13,9 +13,9 @@ const App = () => {
   const [temp, setTemp] = useState([tempFinal[0]])
   const [humidity, setHumidity] = useState([humidityFinal[0]]);
 
-  const [data, setData] = useState({});
+  // const [data, setData] = useState({});
 
-  const socketRef = useRef(null);
+  // const socketRef = useRef(null);
 
   // useEffect(() => {
   //   socketRef.current = io('http://localhost:8888');
