@@ -44,6 +44,7 @@ const App = () => {
   
   return (
     <div className='py-16 px-32'>
+      <p className="mb-4 font-bold">Navitas: the world’s first remote sensing platform powered exclusively by air.</p>
       <p>Good morning, it's <strong>{temp[temp.length - 1]}°</strong> and <strong>{humidity[humidity.length - 1]}%</strong> humidity in <strong>our rainforest</strong>.</p>
       <div className='flex items-center w-full gap-8'>
         <div className='w-1/2'>
