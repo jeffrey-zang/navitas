@@ -36,7 +36,10 @@ const App = () => {
       setHumidity(humidityFinal.slice(0, count))
       setCount(count + 1)
       console.log(temp, humidity, time, count)
-    }, 1000);
+      if (count === 20) {
+        setCount(1)
+      }
+    }, 5000);
     return () => {
       clearInterval(interval);
     };
@@ -79,7 +82,7 @@ const App = () => {
           />
         </div>
       </div>
-      <p className='mt-4'>This data used in this demo is not gathered in real time.</p>
+      {/* <p className='mt-4'>This data used in this demo is not gathered in real time.</p> */}
     </div>
   );
 };
